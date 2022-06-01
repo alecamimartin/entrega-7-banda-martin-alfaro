@@ -18,58 +18,53 @@
         display: grid;
 
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(8, 150px);
-
-        grid-column-gap: 2px;
-        grid-row-gap: 2px;
+        grid-template-rows: repeat(10, 150px);
 
         grid-template-areas: 
         "header header header header"
-        "sectionImg sectionImg sectionImg publicity"
-        "sectionImg sectionImg sectionImg publicity"
-        "sectionImg sectionImg sectionImg publicity"
-        "sectionImg sectionImg sectionImg publicity"
-        "sectionVideos sectionVideos sectionVideos sectionVideos"
-        "sectionVideos sectionVideos sectionVideos sectionVideos"
+        "presentation presentation presentation presentation"
+        "presentation presentation presentation presentation"
+        "presentation presentation presentation presentation"
+        "presentation presentation presentation presentation"
+        "presentation presentation presentation presentation"
+        "publicity publicity publicity publicity"
+        "sectionVideos sectionVideos sectionVideos sectionVideos "
+        "sectionVideos sectionVideos sectionVideos sectionVideos "
         "footer footer footer footer";
 
         align-content: stretch;
     }
 
     #header {
-        background-image: linear-gradient(to right, skyblue, blue);
         grid-area: header;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: stretch;
 
-        z-index: inherit;
+        justify-self: stretch;
+        align-self: baseline;
     }
 
-    #sectionImg {
-        width: 100%;
-        background-image: linear-gradient(to right, red, crimson, yellow);
-        grid-area: sectionImg;
+    #presentation {
+        grid-area: presentation;
     }
 
     #publicity {
-        background-image: linear-gradient(to left, red, crimson, yellow);
         grid-area: publicity;
+        justify-self: center;
+        align-self: center;
     }
 
     #sectionVideos {
-        background-image: linear-gradient(to right, red, crimson, yellow);
         grid-area: sectionVideos;
+        justify-self: center;
+        align-self: center;
     }
 
     #footer {
-        background-image: linear-gradient(to bottom, green, yellowgreen);
         grid-area: footer;
+        background-color: black;
         display: flex;
     }
 
     /* --------------------LAYOUT/GALLERY------------------- */
-
     #bodyGallery {
         width: 100%;
         height: 100%;
@@ -78,7 +73,7 @@
         display: grid;
 
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(14, 150px);
+        grid-template-rows: repeat(24, 1fr);
 
         grid-column-gap: 2px;
         grid-row-gap: 2px;
@@ -97,38 +92,33 @@
         "galleryVideos galleryVideos galleryVideos galleryVideos"
         "galleryVideos galleryVideos galleryVideos galleryVideos"
         "galleryVideos galleryVideos galleryVideos galleryVideos"
+        "galleryVideos galleryVideos galleryVideos galleryVideos"
+        "galleryVideos galleryVideos galleryVideos galleryVideos"
+        "galleryVideos galleryVideos galleryVideos galleryVideos"
+        "galleryVideos galleryVideos galleryVideos galleryVideos"
+        "galleryVideos galleryVideos galleryVideos galleryVideos"
+        "galleryVideos galleryVideos galleryVideos galleryVideos"
+        "galleryVideos galleryVideos galleryVideos galleryVideos"
+        "galleryVideos galleryVideos galleryVideos galleryVideos"
+        "galleryVideos galleryVideos galleryVideos galleryVideos"
+        "galleryVideos galleryVideos galleryVideos galleryVideos"
         "footer footer footer footer";
-
-        align-content: stretch;
-    }
-
-    #header {
-        background-image: linear-gradient(to right, skyblue, blue);
-        grid-area: header;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: stretch;
     }
 
     #gallery {
-        background-image: linear-gradient(to right, red, crimson, yellow);
         grid-area: gallery;
+        justify-self: center;
+        align-self: center;
     }
 
     #galleryImg {
-        background-image: linear-gradient(to right, red, crimson, yellow);
         grid-area: galleryImg;
+        align-self: center;
+        justify-self: center;
     }
 
     #galleryVideos {
-        background-image: linear-gradient(to right, red, crimson, yellow);
         grid-area: galleryVideos;
-    }
-
-    #footer {
-        background-image: linear-gradient(to bottom, green, yellowgreen);
-        grid-area: footer;
-        display: flex;
     }
 
     /* --------------------LAYOUT/DISCOGRAPHY------------------- */
@@ -254,14 +244,6 @@
         align-content: stretch;
     }
 
-    #header {
-        background-image: linear-gradient(to right, skyblue, blue);
-        grid-area: header;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: stretch;
-    }
-
     #discography {
         background-image: linear-gradient(to right, red, crimson, yellow);
         grid-area: discography;
@@ -270,12 +252,6 @@
     #discographyComplete {
         background-image: linear-gradient(to right, red, crimson, yellow);
         grid-area: discographyComplete;
-    }
-
-    #footer {
-        background-image: linear-gradient(to bottom, green, yellowgreen);
-        grid-area: footer;
-        display: flex;
     }
 
     /* --------------------LAYOUT/MEMBERS------------------- */
@@ -352,14 +328,6 @@
         align-content: stretch;
     }
 
-    #header {
-        background-image: linear-gradient(to right, skyblue, blue);
-        grid-area: header;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: stretch;
-    }
-
     #members {
         background-image: linear-gradient(to right, red, crimson, yellow);
         grid-area: members;
@@ -391,12 +359,6 @@
         grid-area: membersJordan;
     }
 
-    #footer {
-        background-image: linear-gradient(to bottom, green, yellowgreen);
-        grid-area: footer;
-        display: flex;
-    }
-
     /* --------------------LAYOUT/CONTACT------------------- */
 
     #bodyContact {
@@ -424,14 +386,6 @@
         align-content: stretch;
     }
 
-    #header {
-        background-image: linear-gradient(to right, skyblue, blue);
-        grid-area: header;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: stretch;
-    }
-
     #contactUs {
         background-image: linear-gradient(to right, red, crimson, yellow);
         grid-area: contactUs;
@@ -443,18 +397,11 @@
         grid-area: boxForm;
     }
 
-    #footer {
-        background-image: linear-gradient(to bottom, green, yellowgreen);
-        grid-area: footer;
-        display: flex;
-    }
-
     /* --------------------ITEMS/HEADER------------------- */
 
     .audio {
         width: 100%;
         height: 40px;
-        background-color: grey;
     }
 
     .audio audio {
@@ -466,160 +413,72 @@
     }
 
 
-    input {
-        width: 200px;
-        height: 20px;
-        transition: all 1s;
-    }
-
     input:focus {
-        width: 50%;
-        height: 60px;
-        background-image: linear-gradient(skyblue, purple);
-        transform: translate(100px); 
-    }
-    
-    .menu ul {
-        list-style-type: none;
-        display: flex;
-    }
-    
-    .menu li{
-        background-color: blue;
-        text-align: center;
-        width: 25%;
-        height: 20px;
-        font-size: 10px;
-    }
-
-    .menu ul li a {
-        color: red;
-    }
-    
-    .menu ul li a:hover {
-        color: green;
-    }
-
-    .menu ul li a:active {
-        color: violet;
+        background-image: linear-gradient(to top, red, orange);
     }
 
 /* --------------------ITEMS/FOOTER------------------- */
 
-    .quotes {
-        width: 75%;
+    .footerLogo {
+        width: 100%;
         height: 100%;
     }
 
-    .quotes p {
-        color: grey;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 15px;
-
-        text-align: center;
+    .footerLogo img {
+        width: 50px;
+        height: 50%;
 
         position: relative;
         top: 20px;
+        left: 25px;
+    }
+
+    .history {
+        width: 100%;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 5px;
+        list-style: 12px;
+        text-align: center;
+
+        align-self: center;
     }
 
     .links {
-        width: 25%;
-        line-height: 40px;
+        width: 100%;
         text-align: center;
-    }
-
-    .links a {
-        display: block;
-
-        position: relative;
-        top: 5px;
-        left: 0px;
+        line-height: 40px;
     }
 
     .links a img{
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
     }
 
 /* --------------------ITEMS/HOME------------------- */
 
-    .miniGallery {
-        width: 100%;
-        height: 275px;
-
-        line-height: 30px;
-        text-align: center;
-    }
-
-    .miniGallery img {
-        width: 100px;
-        height: 100px;
-
-        position: relative;
-        top: 25px;
-    }
-
-    .miniGallery img:hover {
-        transform: scale(4,4);
-        transition: 2s;
-    }
-
     .nameBand {
-        color: white;
+        color: black;
         font-family: 'Permanent Marker', cursive;
-        font-size: 25px;
+        font-size: 32px;
         text-align: center;
     }
 
     .description {
-        color: grey;
+        color: black;
         font-family: 'Courier New', Courier, monospace;
-        font-size: 15px;
-        line-height: 22px;
+        font-size: 10px;
+        line-height: 11px;
         text-align: center;
-    }
-
-    .banner {
-        background-color: brown;
-    }
-
-    .miniVideos {
-        width: 100%;
-        height: 225px;
     }
 
     .miniVideos iframe {
         width: 150px;
-        height: 150px;
-
-        position: relative;
-        top: 40px;
-        left: 10px;
+        height: 100px;
     }
 
-    .miniVideos p {
-        width: 100%;
-        color: grey;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 20px;
-
+    .buttonMore {
         text-align: center;
-
-        position: relative;
-        top: 85px;
-        left: 0px;
-    }
-
-    .miniVideos p a {
-        color: red;
-    }
-    
-    .miniVideos p a:hover {
-        color: green;
-    }
-
-    .miniVideos p a:active {
-        color: violet;
     }
 
     /* --------------------ITEMS/GALLERY-------------------- */
@@ -627,59 +486,28 @@
     .bigTitleGallery {
         color: black;
         font-family: 'Permanent Marker', cursive;
-        font-size: 45px;
-        text-align: center;
-
-        position: relative;
-        top: 40px;
-        left: 0px;
+        font-size: 30px;
     }
 
-    .titleGalleryImg {
+    .titleGalleryImg, .titleGalleryVideos {
         color: black;
         font-family: 'Permanent Marker', cursive;
-        font-size: 30px;
+        font-size: 25px;
         text-align: center;
-    }
-
-    .galleryImg {
-        display: flex;
-        flex-direction: wrap;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
     }
 
     .galleryImg img {
-        width: 90px;
-        height: 90px;
-        border: 2px solid violet;
+        width: 100%;
+        height: 350px;
+    }
+
+    .videosAll iframe {
+        width: 350px;
+        height: 200px;
 
         position: relative;
         top: 10px;
-    }
-
-    .titleGalleryVideos {
-        color: black;
-        font-family: 'Permanent Marker', cursive;
-        font-size: 30px;
-        text-align: center;
-        background-color: skyblue;
-    }
-
-    .galleryVideos {
-        display: flex;
-        flex-direction: wrap;
-        flex-wrap: wrap;
-    }
-
-    .galleryVideos iframe {
-        width: 150px;
-        height: 150px;
-        border: 2px solid greenyellow;
-
-        position: relative;
-        top: 10px;
-        left: 10px;
+        left: 70px;
     }
 
         /* --------------------ITEMS/DISCOGRAPHY-------------------- */

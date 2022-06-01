@@ -7,6 +7,8 @@
 
 @media (min-width: 769px) and (max-width: 1300px) {
 
+/* --------------------LAYOUT/HOME------------------- */
+
     #bodyHome {
         width: 100%;
         height: 100%;
@@ -14,55 +16,57 @@
 
         display: grid;
 
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(10, 150px);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(12, 150px);
 
         grid-column-gap: 2px;
         grid-row-gap: 2px;
 
         grid-template-areas: 
-        "header header header header header"
-        "sectionImg sectionImg sectionImg sectionImg publicity"
-        "sectionImg sectionImg sectionImg sectionImg publicity"
-        "sectionImg sectionImg sectionImg sectionImg publicity"
-        "sectionImg sectionImg sectionImg sectionImg publicity"
-        "sectionImg sectionImg sectionImg sectionImg publicity"
-        "sectionVideos sectionVideos sectionVideos sectionVideos sectionVideos"
-        "sectionVideos sectionVideos sectionVideos sectionVideos sectionVideos"
-        "sectionVideos sectionVideos sectionVideos sectionVideos sectionVideos"
-        "footer footer footer footer footer";
+        "header header header header"
+        "presentation presentation presentation publicity"
+        "presentation presentation presentation publicity"
+        "presentation presentation presentation publicity"
+        "presentation presentation presentation publicity"
+        "presentation presentation presentation publicity"
+        "presentation presentation presentation publicity"
+        "presentation presentation presentation publicity"
+        "sectionVideos sectionVideos sectionVideos sectionVideos"
+        "sectionVideos sectionVideos sectionVideos sectionVideos"
+        "sectionVideos sectionVideos sectionVideos sectionVideos"
+        "footer footer footer footer";
 
         align-content: stretch;
     }
 
     #header {
-        background-image: linear-gradient(to right, skyblue, blue);
         grid-area: header;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: stretch;
+
+        justify-self: stretch;
+        align-self: baseline;
     }
 
-    #sectionImg {
-        width: 100%;
-        background-image: linear-gradient(to right, red, crimson, yellow);
-        grid-area: sectionImg;
+    #presentation {
+        grid-area: presentation;
     }
 
     #publicity {
-        background-image: linear-gradient(to left, red, crimson, yellow);
         grid-area: publicity;
     }
 
     #sectionVideos {
-        background-image: linear-gradient(to right, red, crimson, yellow);
         grid-area: sectionVideos;
+        justify-self: center;
+        align-self: center;
     }
 
     #footer {
-        background-image: linear-gradient(to bottom, green, yellowgreen);
         grid-area: footer;
+        background-color: black;
         display: flex;
+
+        justify-self: stretch;
+        align-self: center;
     }
 
     /* --------------------LAYOUT/GALLERY------------------- */
@@ -75,7 +79,7 @@
         display: grid;
 
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(30, 150px);
+        grid-template-rows: repeat(18, 150px);
 
         grid-column-gap: 2px;
         grid-row-gap: 2px;
@@ -91,18 +95,6 @@
         "galleryImg galleryImg galleryImg galleryImg"
         "galleryImg galleryImg galleryImg galleryImg"
         "galleryImg galleryImg galleryImg galleryImg"
-        "galleryImg galleryImg galleryImg galleryImg"
-        "galleryImg galleryImg galleryImg galleryImg"
-        "galleryImg galleryImg galleryImg galleryImg"
-        "galleryImg galleryImg galleryImg galleryImg"
-        "galleryImg galleryImg galleryImg galleryImg"
-        "galleryImg galleryImg galleryImg galleryImg"
-        "galleryImg galleryImg galleryImg galleryImg"
-        "galleryImg galleryImg galleryImg galleryImg"
-        "galleryImg galleryImg galleryImg galleryImg"
-        "galleryImg galleryImg galleryImg galleryImg"
-        "galleryImg galleryImg galleryImg galleryImg"
-        "galleryVideos galleryVideos galleryVideos galleryVideos"
         "galleryVideos galleryVideos galleryVideos galleryVideos"
         "galleryVideos galleryVideos galleryVideos galleryVideos"
         "galleryVideos galleryVideos galleryVideos galleryVideos"
@@ -115,35 +107,21 @@
         align-content: stretch;
     }
 
-    #header {
-        background-image: linear-gradient(to right, skyblue, blue);
-        grid-area: header;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: stretch;
-    }
-
     #gallery {
-        background-image: linear-gradient(to right, red, crimson, yellow);
         grid-area: gallery;
+        align-self: center;
+        justify-self: center;
     }
 
     #galleryImg {
-        background-image: linear-gradient(to right, red, crimson, yellow);
         grid-area: galleryImg;
+        align-self: center;
+        justify-self: center;
     }
 
     #galleryVideos {
-        background-image: linear-gradient(to right, red, crimson, yellow);
         grid-area: galleryVideos;
     }
-
-    #footer {
-        background-image: linear-gradient(to bottom, green, yellowgreen);
-        grid-area: footer;
-        display: flex;
-    }
-
 
     /* --------------------LAYOUT/DISCOGRAPHY------------------- */
 
@@ -205,13 +183,6 @@
         align-content: stretch;
     }
 
-    #header {
-        background-image: linear-gradient(to right, skyblue, blue);
-        grid-area: header;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: stretch;
-    }
 
     #discography {
         background-image: linear-gradient(to right, red, crimson, yellow);
@@ -223,11 +194,7 @@
         grid-area: discographyComplete;
     }
 
-    #footer {
-        background-image: linear-gradient(to bottom, green, yellowgreen);
-        grid-area: footer;
-        display: flex;
-    }
+
 
     /* --------------------LAYOUT/MEMBERS------------------- */
 
@@ -299,13 +266,6 @@
         align-content: stretch;
     }
 
-    #header {
-        background-image: linear-gradient(to right, skyblue, blue);
-        grid-area: header;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: stretch;
-    }
 
     #members {
         background-image: linear-gradient(to right, red, crimson, yellow);
@@ -338,11 +298,7 @@
         grid-area: membersJordan;
     }
 
-    #footer {
-        background-image: linear-gradient(to bottom, green, yellowgreen);
-        grid-area: footer;
-        display: flex;
-    }
+
 
     /* --------------------LAYOUT/CONTACT------------------- */
 
@@ -372,14 +328,6 @@
         align-content: stretch;
     }
 
-    #header {
-        background-image: linear-gradient(to right, skyblue, blue);
-        grid-area: header;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: stretch;
-    }
-
     #contactUs {
         background-image: linear-gradient(to right, red, crimson, yellow);
         grid-area: contactUs;
@@ -391,18 +339,11 @@
         grid-area: boxForm;
     }
 
-    #footer {
-        background-image: linear-gradient(to bottom, green, yellowgreen);
-        grid-area: footer;
-        display: flex;
-    }
-
     /* --------------------ITEMS/HEADER------------------- */
 
     .audio {
         width: 100%;
         height: 40px;
-        background-color: grey;
     }
 
     .audio audio {
@@ -413,176 +354,73 @@
         left: 735px;
     }
 
-    .search input { /* colocar animacion, colocar boton y hacer correciones */
-        width: 250px;
-        height: 20px;
-
-        position: relative;
-        top: -5px;
-        left: 20px;
-    }
-
-    input {
-        width: 200px;
-        height: 20px;
-        transition: all 1s;
-    }
 
     input:focus {
-        width: 50%;
-        height: 60px;
-        background-image: linear-gradient(skyblue, purple);
-        transform: translate(100px); 
-    }
-    
-    .menu ul {
-        list-style-type: none;
-        display: flex;
-    }
-    
-    .menu li{
-        background-color: blue;
-        text-align: center;
-        width: 25%;
-        height: 35px;
-        font-size: 25px;
-    }
-
-    .menu ul li a {
-        color: red;
-    }
-    
-    .menu ul li a:hover {
-        color: green;
-    }
-
-    .menu ul li a:active {
-        color: violet;
+        background-image: linear-gradient(to top, red, orange);
     }
 
 /* --------------------ITEMS/FOOTER------------------- */
 
-    .quotes {
-        width: 50%;
+    .footerLogo {
+        width: 100%;
         height: 100%;
     }
 
-    .quotes p {
-        color: grey;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 20px;
-
-        text-align: center;
+    .footerLogo img {
+        width: 200px;
+        height: 100%;
 
         position: relative;
-        top: 45px;
+        top: 20px;
+        left: 50px;
+    }
+
+    .history {
+        width: 100%;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 10px;
+        list-style: 25px;
+        text-align: center;
+
+        align-self: center;
     }
 
     .links {
-        width: 40%;
-        line-height: 30px;
-        text-align: end;
-    }
-
-    .links a {
-        display: block;
-
-        position: relative;
-        top: 15px;
-        left: 0px;
+        width: 100%;
+        text-align: center;
+        line-height: 80px;
     }
 
     .links a img{
-        width: 35px;
-        height: 35px;
+        width: 50px;
+        height: 50px;
     }
 
 /* --------------------ITEMS/HOME------------------- */
 
-    .miniGallery {
-        width: 100%;
-        height: 275px;
-
-        line-height: 30px;
-        text-align: center;
-    }
-
-    .miniGallery img {
-        width: 200px;
-        height: 200px;
-
-        position: relative;
-        top: 25px;
-    }
-
-    .miniGallery img:hover {
-        transform: scale(4,4);
-        transition: 2s;
-    }
-
     .nameBand {
-        color: white;
+        color: black;
         font-family: 'Permanent Marker', cursive;
         font-size: 65px;
         text-align: center;
-
-        position: relative;
-        top: 50px;
     }
 
     .description {
-        color: grey;
+        color: black;
         font-family: 'Courier New', Courier, monospace;
         font-size: 20px;
         line-height: 22px;
-        text-align: center;
-
-        position: relative;
-        top: 80px;
-    }
-
-    .banner {
-        background-color: brown;
-    }
-
-    .miniVideos {
-        width: 100%;
-        height: 225px;
-
         text-align: center;
     }
 
     .miniVideos iframe {
         width: 300px;
         height: 200px;
-
-        position: relative;
-        top: 60px;
     }
 
-    .miniVideos p {
-        width: 100%;
-        color: grey;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 30px;
-
+    .buttonMore {
         text-align: center;
-
-        position: relative;
-        top: 150px;
-        left: 0px;
-    }
-
-    .miniVideos p a {
-        color: red;
-    }
-    
-    .miniVideos p a:hover {
-        color: green;
-    }
-
-    .miniVideos p a:active {
-        color: violet;
     }
 
     /* --------------------ITEMS/GALLERY-------------------- */
@@ -591,59 +429,28 @@
         color: black;
         font-family: 'Permanent Marker', cursive;
         font-size: 60px;
-        text-align: center;
-
-        position: relative;
-        top: 35px;
     }
 
-    .titleGalleryImg {
+    .titleGalleryImg, .titleGalleryVideos {
         color: black;
         font-family: 'Permanent Marker', cursive;
         font-size: 50px;
         text-align: center;
     }
 
-    .galleryImg {
-        display: flex;
-        flex-direction: wrap;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+    .imagesAll img {
+        width: 100%;
+        height: 750px;
     }
 
-    .galleryImg img {
+    .videosAll iframe {
         width: 300px;
-        height: 300px;
-        border: 2px solid violet;
-
-        position: relative;
-        top: 10px;
-    }
-
-    .titleGalleryVideos {
-        color: black;
-        font-family: 'Permanent Marker', cursive;
-        font-size: 50px;
-        text-align: center;
-        background-color: skyblue;
-    }
-
-    .galleryVideos {
-        display: flex;
-        flex-direction: wrap;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-
-    .galleryVideos iframe {
-        width: 350px;
         height: 200px;
-        border: 2px solid greenyellow;
 
         position: relative;
-        top: 10px;
+        top: 20px;
+        left: 50px;
     }
-
 
         /* --------------------ITEMS/DISCOGRAPHY-------------------- */
 
@@ -848,11 +655,12 @@
         position: relative;
         top: 50px;
     }
-    
+
     .form {
         width: 100%;
         height: 550px;
         text-align: center;
-        line-height: 30px;
+        line-height: 30px; 
     }
+
 }
