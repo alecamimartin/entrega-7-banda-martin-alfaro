@@ -1,0 +1,858 @@
+
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+
+    #bodyHome {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right, red, crimson, yellow);
+
+        display: grid;
+
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(10, 150px);
+
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+
+        grid-template-areas: 
+        "header header header header header"
+        "sectionImg sectionImg sectionImg sectionImg publicity"
+        "sectionImg sectionImg sectionImg sectionImg publicity"
+        "sectionImg sectionImg sectionImg sectionImg publicity"
+        "sectionImg sectionImg sectionImg sectionImg publicity"
+        "sectionImg sectionImg sectionImg sectionImg publicity"
+        "sectionVideos sectionVideos sectionVideos sectionVideos sectionVideos"
+        "sectionVideos sectionVideos sectionVideos sectionVideos sectionVideos"
+        "sectionVideos sectionVideos sectionVideos sectionVideos sectionVideos"
+        "footer footer footer footer footer";
+
+        align-content: stretch;
+    }
+
+    #header {
+        background-image: linear-gradient(to right, skyblue, blue);
+        grid-area: header;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: stretch;
+    }
+
+    #sectionImg {
+        width: 100%;
+        background-image: linear-gradient(to right, red, crimson, yellow);
+        grid-area: sectionImg;
+    }
+
+    #publicity {
+        background-image: linear-gradient(to left, red, crimson, yellow);
+        grid-area: publicity;
+    }
+
+    #sectionVideos {
+        background-image: linear-gradient(to right, red, crimson, yellow);
+        grid-area: sectionVideos;
+    }
+
+    #footer {
+        background-image: linear-gradient(to bottom, green, yellowgreen);
+        grid-area: footer;
+        display: flex;
+    }
+
+    /* --------------------LAYOUT/GALLERY------------------- */
+
+    #bodyGallery {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right, red, crimson, yellow);
+
+        display: grid;
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(30, 150px);
+
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+
+        grid-template-areas: 
+        "header header header header"
+        "gallery gallery gallery gallery"
+        "galleryImg galleryImg galleryImg galleryImg"
+        "galleryImg galleryImg galleryImg galleryImg"
+        "galleryImg galleryImg galleryImg galleryImg"
+        "galleryImg galleryImg galleryImg galleryImg"
+        "galleryImg galleryImg galleryImg galleryImg"
+        "galleryImg galleryImg galleryImg galleryImg"
+        "galleryImg galleryImg galleryImg galleryImg"
+        "galleryImg galleryImg galleryImg galleryImg"
+        "galleryImg galleryImg galleryImg galleryImg"
+        "galleryImg galleryImg galleryImg galleryImg"
+        "galleryImg galleryImg galleryImg galleryImg"
+        "galleryImg galleryImg galleryImg galleryImg"
+        "galleryImg galleryImg galleryImg galleryImg"
+        "galleryImg galleryImg galleryImg galleryImg"
+        "galleryImg galleryImg galleryImg galleryImg"
+        "galleryImg galleryImg galleryImg galleryImg"
+        "galleryImg galleryImg galleryImg galleryImg"
+        "galleryImg galleryImg galleryImg galleryImg"
+        "galleryImg galleryImg galleryImg galleryImg"
+        "galleryVideos galleryVideos galleryVideos galleryVideos"
+        "galleryVideos galleryVideos galleryVideos galleryVideos"
+        "galleryVideos galleryVideos galleryVideos galleryVideos"
+        "galleryVideos galleryVideos galleryVideos galleryVideos"
+        "galleryVideos galleryVideos galleryVideos galleryVideos"
+        "galleryVideos galleryVideos galleryVideos galleryVideos"
+        "galleryVideos galleryVideos galleryVideos galleryVideos"
+        "galleryVideos galleryVideos galleryVideos galleryVideos"
+        "footer footer footer footer";
+
+        align-content: stretch;
+    }
+
+    #header {
+        background-image: linear-gradient(to right, skyblue, blue);
+        grid-area: header;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: stretch;
+    }
+
+    #gallery {
+        background-image: linear-gradient(to right, red, crimson, yellow);
+        grid-area: gallery;
+    }
+
+    #galleryImg {
+        background-image: linear-gradient(to right, red, crimson, yellow);
+        grid-area: galleryImg;
+    }
+
+    #galleryVideos {
+        background-image: linear-gradient(to right, red, crimson, yellow);
+        grid-area: galleryVideos;
+    }
+
+    #footer {
+        background-image: linear-gradient(to bottom, green, yellowgreen);
+        grid-area: footer;
+        display: flex;
+    }
+
+
+    /* --------------------LAYOUT/DISCOGRAPHY------------------- */
+
+    #bodyDiscography {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right, red, crimson, yellow);
+
+        display: grid;
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(40, 150px);
+
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+
+        grid-template-areas: 
+        "header header header header"
+        "discography discography discography discography"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "discographyComplete discographyComplete discographyComplete discographyComplete"
+        "footer footer footer footer";
+
+        align-content: stretch;
+    }
+
+    #header {
+        background-image: linear-gradient(to right, skyblue, blue);
+        grid-area: header;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: stretch;
+    }
+
+    #discography {
+        background-image: linear-gradient(to right, red, crimson, yellow);
+        grid-area: discography;
+    }
+
+    #discographyComplete {
+        background-image: linear-gradient(to right, red, crimson, yellow);
+        grid-area: discographyComplete;
+    }
+
+    #footer {
+        background-image: linear-gradient(to bottom, green, yellowgreen);
+        grid-area: footer;
+        display: flex;
+    }
+
+    /* --------------------LAYOUT/MEMBERS------------------- */
+
+    #bodyMembers {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right, red, crimson, yellow);
+
+        display: grid;
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(50, 150px);
+
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+
+        grid-template-areas: 
+        "header header header header"
+        "members members members members"
+        "membersOliver membersOliver membersOliver membersOliver"
+        "membersOliver membersOliver membersOliver membersOliver"
+        "membersOliver membersOliver membersOliver membersOliver"
+        "membersOliver membersOliver membersOliver membersOliver"
+        "membersOliver membersOliver membersOliver membersOliver"
+        "membersOliver membersOliver membersOliver membersOliver"
+        "membersOliver membersOliver membersOliver membersOliver"
+        "membersOliver membersOliver membersOliver membersOliver"
+        "membersOliver membersOliver membersOliver membersOliver"
+        "membersOliver membersOliver membersOliver membersOliver"
+        "membersMattNicholls membersMattNicholls membersMattNicholls membersMattNicholls"
+        "membersMattNicholls membersMattNicholls membersMattNicholls membersMattNicholls"
+        "membersMattNicholls membersMattNicholls membersMattNicholls membersMattNicholls"
+        "membersMattNicholls membersMattNicholls membersMattNicholls membersMattNicholls"
+        "membersMattNicholls membersMattNicholls membersMattNicholls membersMattNicholls"
+        "membersMattNicholls membersMattNicholls membersMattNicholls membersMattNicholls"
+        "membersMattNicholls membersMattNicholls membersMattNicholls membersMattNicholls"
+        "membersMattNicholls membersMattNicholls membersMattNicholls membersMattNicholls"
+        "membersMattNicholls membersMattNicholls membersMattNicholls membersMattNicholls"
+        "membersMattNicholls membersMattNicholls membersMattNicholls membersMattNicholls"
+        "membersMattNicholls membersMattNicholls membersMattNicholls membersMattNicholls"
+        "membersMattNicholls membersMattNicholls membersMattNicholls membersMattNicholls"
+        "membersMattNicholls membersMattNicholls membersMattNicholls membersMattNicholls"
+        "membersLee membersLee membersLee membersLee"
+        "membersLee membersLee membersLee membersLee"
+        "membersLee membersLee membersLee membersLee"
+        "membersLee membersLee membersLee membersLee"
+        "membersLee membersLee membersLee membersLee"
+        "membersLee membersLee membersLee membersLee"
+        "membersLee membersLee membersLee membersLee"
+        "membersLee membersLee membersLee membersLee"
+        "membersMattKean membersMattKean membersMattKean membersMattKean"
+        "membersMattKean membersMattKean membersMattKean membersMattKean"
+        "membersMattKean membersMattKean membersMattKean membersMattKean"
+        "membersMattKean membersMattKean membersMattKean membersMattKean"
+        "membersMattKean membersMattKean membersMattKean membersMattKean"
+        "membersMattKean membersMattKean membersMattKean membersMattKean"
+        "membersMattKean membersMattKean membersMattKean membersMattKean"
+        "membersMattKean membersMattKean membersMattKean membersMattKean"
+        "membersJordan membersJordan membersJordan membersJordan"
+        "membersJordan membersJordan membersJordan membersJordan"
+        "membersJordan membersJordan membersJordan membersJordan"
+        "membersJordan membersJordan membersJordan membersJordan"
+        "membersJordan membersJordan membersJordan membersJordan"
+        "membersJordan membersJordan membersJordan membersJordan"
+        "membersJordan membersJordan membersJordan membersJordan"
+        "membersJordan membersJordan membersJordan membersJordan"
+        "footer footer footer footer";
+
+        align-content: stretch;
+    }
+
+    #header {
+        background-image: linear-gradient(to right, skyblue, blue);
+        grid-area: header;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: stretch;
+    }
+
+    #members {
+        background-image: linear-gradient(to right, red, crimson, yellow);
+        grid-area: members;
+
+    }
+
+    #membersOliver {
+        background-image: linear-gradient(to right, red, crimson, yellow);
+        grid-area: membersOliver;
+    }
+
+    #membersMattNicholls {
+        background-image: linear-gradient(to right, red, crimson, yellow);
+        grid-area: membersMattNicholls;
+    }
+
+    #membersLee {
+        background-image: linear-gradient(to right, red, crimson, yellow);
+        grid-area: membersLee;
+    }
+
+    #membersMattKean {
+        background-image: linear-gradient(to right, red, crimson, yellow);
+        grid-area: membersMattKean;
+    }
+
+    #membersJordan {
+        background-image: linear-gradient(to right, red, crimson, yellow);
+        grid-area: membersJordan;
+    }
+
+    #footer {
+        background-image: linear-gradient(to bottom, green, yellowgreen);
+        grid-area: footer;
+        display: flex;
+    }
+
+    /* --------------------LAYOUT/CONTACT------------------- */
+
+    #bodyContact {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right, red, crimson, yellow);
+
+        display: grid;
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(8, 150px);
+
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+
+        grid-template-areas: 
+        "header header header header"
+        "contactUs contactUs contactUs contactUs"
+        "contactUs contactUs contactUs contactUs"
+        "boxForm boxForm boxForm boxForm"
+        "boxForm boxForm boxForm boxForm"
+        "boxForm boxForm boxForm boxForm"
+        "boxForm boxForm boxForm boxForm"
+        "footer footer footer footer";
+
+        align-content: stretch;
+    }
+
+    #header {
+        background-image: linear-gradient(to right, skyblue, blue);
+        grid-area: header;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: stretch;
+    }
+
+    #contactUs {
+        background-image: linear-gradient(to right, red, crimson, yellow);
+        grid-area: contactUs;
+
+    }
+
+    #boxForm {
+        background-image: linear-gradient(to right, red, crimson, yellow);
+        grid-area: boxForm;
+    }
+
+    #footer {
+        background-image: linear-gradient(to bottom, green, yellowgreen);
+        grid-area: footer;
+        display: flex;
+    }
+
+    /* --------------------ITEMS/HEADER------------------- */
+
+    .audio {
+        width: 100%;
+        height: 40px;
+        background-color: grey;
+    }
+
+    .audio audio {
+        width: 250px;
+        height: 20px;
+        position: relative;
+        top: 10px;
+        left: 735px;
+    }
+
+    .search input { /* colocar animacion, colocar boton y hacer correciones */
+        width: 250px;
+        height: 20px;
+
+        position: relative;
+        top: -5px;
+        left: 20px;
+    }
+
+    input {
+        width: 200px;
+        height: 20px;
+        transition: all 1s;
+    }
+
+    input:focus {
+        width: 50%;
+        height: 60px;
+        background-image: linear-gradient(skyblue, purple);
+        transform: translate(100px); 
+    }
+    
+    .menu ul {
+        list-style-type: none;
+        display: flex;
+    }
+    
+    .menu li{
+        background-color: blue;
+        text-align: center;
+        width: 25%;
+        height: 35px;
+        font-size: 25px;
+    }
+
+    .menu ul li a {
+        color: red;
+    }
+    
+    .menu ul li a:hover {
+        color: green;
+    }
+
+    .menu ul li a:active {
+        color: violet;
+    }
+
+/* --------------------ITEMS/FOOTER------------------- */
+
+    .quotes {
+        width: 50%;
+        height: 100%;
+    }
+
+    .quotes p {
+        color: grey;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+
+        text-align: center;
+
+        position: relative;
+        top: 45px;
+    }
+
+    .links {
+        width: 40%;
+        line-height: 30px;
+        text-align: end;
+    }
+
+    .links a {
+        display: block;
+
+        position: relative;
+        top: 15px;
+        left: 0px;
+    }
+
+    .links a img{
+        width: 35px;
+        height: 35px;
+    }
+
+/* --------------------ITEMS/HOME------------------- */
+
+    .miniGallery {
+        width: 100%;
+        height: 275px;
+
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .miniGallery img {
+        width: 200px;
+        height: 200px;
+
+        position: relative;
+        top: 25px;
+    }
+
+    .miniGallery img:hover {
+        transform: scale(4,4);
+        transition: 2s;
+    }
+
+    .nameBand {
+        color: white;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 65px;
+        text-align: center;
+
+        position: relative;
+        top: 50px;
+    }
+
+    .description {
+        color: grey;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        line-height: 22px;
+        text-align: center;
+
+        position: relative;
+        top: 80px;
+    }
+
+    .banner {
+        background-color: brown;
+    }
+
+    .miniVideos {
+        width: 100%;
+        height: 225px;
+
+        text-align: center;
+    }
+
+    .miniVideos iframe {
+        width: 300px;
+        height: 200px;
+
+        position: relative;
+        top: 60px;
+    }
+
+    .miniVideos p {
+        width: 100%;
+        color: grey;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 30px;
+
+        text-align: center;
+
+        position: relative;
+        top: 150px;
+        left: 0px;
+    }
+
+    .miniVideos p a {
+        color: red;
+    }
+    
+    .miniVideos p a:hover {
+        color: green;
+    }
+
+    .miniVideos p a:active {
+        color: violet;
+    }
+
+    /* --------------------ITEMS/GALLERY-------------------- */
+
+    .bigTitleGallery {
+        color: black;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 60px;
+        text-align: center;
+
+        position: relative;
+        top: 35px;
+    }
+
+    .titleGalleryImg {
+        color: black;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .galleryImg {
+        display: flex;
+        flex-direction: wrap;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .galleryImg img {
+        width: 300px;
+        height: 300px;
+        border: 2px solid violet;
+
+        position: relative;
+        top: 10px;
+    }
+
+    .titleGalleryVideos {
+        color: black;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 50px;
+        text-align: center;
+        background-color: skyblue;
+    }
+
+    .galleryVideos {
+        display: flex;
+        flex-direction: wrap;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .galleryVideos iframe {
+        width: 350px;
+        height: 200px;
+        border: 2px solid greenyellow;
+
+        position: relative;
+        top: 10px;
+    }
+
+
+        /* --------------------ITEMS/DISCOGRAPHY-------------------- */
+
+    .bigTitleDiscography {
+        color: black;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 45px;
+        text-align: center;
+
+        position: relative;
+        top: 30px;
+        left: 0px;
+    }
+
+    .titleAlbumStudio, .titleSingleEP, .titleLive, .titleCollaborations {
+        color: black;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .discos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .discos a img{
+        width: 300px;
+        height: 300px;
+        border: 2px solid violet;
+    }
+
+    /* --------------------ITEMS/MEMBERS-------------------- */
+
+    .bigTitleMembers {
+        color: black;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .titleOliver, .titleMattN, .titleLee, .titleMattKean, .titleJordan {
+        background-color: crimson;
+        color: black;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .oliver1, .oliver2, .oliver3 {
+        width: 100%;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .oliver1 img {
+        display: inline;
+        width: 200px;
+        height: 200px;
+        border: 2px solid violet;
+    }
+
+    .oliver2 img {
+        width: 300px;
+        height: 300px;
+        border: 2px solid violet;
+    }
+
+    .oliver3 img {
+        display: inline;
+        width: 225px;
+        height: 275px;
+        border: 2px solid violet;
+    }
+
+    .mattN1, .mattN2, .mattN3 {
+        width: 100%;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .mattN1 img {
+        display: inline;
+        width: 150px;
+        height: 150px;
+        border: 2px solid violet;
+    }
+
+    .mattN2 img {
+        width: 450px;
+        height: 350px;
+        border: 2px solid violet;
+    }
+
+    .mattN3 img {
+        display: block;
+        width: 500px;
+        height: 250px;
+        border: 2px solid violet;
+
+        position: relative;
+        top: 0px;
+        left: 350px;
+    }
+
+    .lee1, .lee2, .lee3 {
+        width: 100%;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .lee1 img {
+        display: inline;
+        width: 350px;
+        height: 350px;
+        border: 2px solid violet;
+    }
+
+    .lee2 img {
+        width: 450px;
+        height: 250px;
+        border: 2px solid violet;
+    }
+
+    .lee3 img {
+        display: inline;
+        width: 300px;
+        height: 300px;
+        border: 2px solid violet;
+    }
+
+    .mattK1, .mattK2, .mattK3 {
+        width: 100%;
+        text-align: center;
+        line-height: 30px;
+    }
+    
+    .mattK1 img {
+        display: inline;
+        width: 250px;
+        height: 400px;
+        border: 2px solid violet;
+    }
+
+    .mattK2 img {
+        width: 450px;
+        height: 250px;
+        border: 2px solid violet;
+    }
+
+    .mattK3 img {
+        display: inline;
+        width: 300px;
+        height: 300px;
+        border: 2px solid violet;
+    }
+
+    .jordan1, .jordan2, .jordan3 {
+        width: 100%;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .jordan1 img {
+        display: inline;
+        width: 250px;
+        height: 400px;
+        border: 2px solid violet;
+    }
+
+    .jordan2 img {
+        width: 450px;
+        height: 250px;
+        border: 2px solid violet;
+    }
+
+    .jordan3 img {
+        display: inline;
+        width: 200px;
+        height: 200px;
+        border: 2px solid violet;
+    }
+
+    /* --------------------ITEMS/CONTACT-------------------- */
+
+    .titleContacUs {
+        color: black;
+        font-family: 'Permanent Marker', cursive;
+        font-size: 50px;
+        text-align: center;
+    }
+    
+    .descriptionContactUs {
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 25px;
+        text-align: center;
+
+        position: relative;
+        top: 50px;
+    }
+    
+    .form {
+        width: 100%;
+        height: 550px;
+        text-align: center;
+        line-height: 30px;
+    }
+}
